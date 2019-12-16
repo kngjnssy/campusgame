@@ -23,13 +23,8 @@ ada_rect.bottom = 393
 
 warp = pg.image.load(find_data_file('img/text_warp.png'))
 warp_rect = warp.get_rect()
-warp_rect.centerx = 272
+warp_rect.centerx = 372
 warp_rect.bottom = 365
-
-# bit = pg.image.load(find_data_file('img/text_8bit.png'))
-# bit_rect = bit.get_rect()
-# bit_rect.centerx = 68
-# bit_rect.top = 508
 
 rock = pg.image.load(find_data_file('img/text_rock.png'))
 rock_rect = rock.get_rect()
@@ -41,16 +36,36 @@ lizard_rect = lizard.get_rect()
 lizard_rect.centerx = 675
 lizard_rect.top = 508
 
-# zuse	228	382
+zuse = pg.image.load(find_data_file('img/zuse.png'))
+zuse_rect = zuse.get_rect()
+zuse_rect.centerx = 278
+zuse_rect.top = 322
 
-# echo	316	349
-# roomy	849	173
-# rick	849	290
-# morty	849	334
-# kitchen	915	420
-# jungle	1031	420
-# hally	915	193
-# peace	915	153
+roomy = pg.image.load(find_data_file('img/roomy.png'))
+roomy_rect = roomy.get_rect()
+roomy_rect.centerx = 849
+roomy_rect.top = 143
+
+morty = pg.image.load(find_data_file('img/morty.png'))
+morty_rect = morty.get_rect()
+morty_rect.centerx = 849
+morty_rect.top = 234
+
+aff = pg.image.load(find_data_file('img/aff.png'))
+aff_rect = aff.get_rect()
+aff_rect.centerx = 1115
+aff_rect.top = 60
+
+otter = pg.image.load(find_data_file('img/otter.png'))
+otter_rect = otter.get_rect()
+otter_rect.centerx = 1209
+otter_rect.top = 44
+
+# bit = pg.image.load(find_data_file('img/text_8bit.png'))
+# bit_rect = bit.get_rect()
+# bit_rect.centerx = 68
+# bit_rect.top = 508
+
 # AFF	1145	110
 # NYMERIA	1145	201
 # COGNITO	1145	247

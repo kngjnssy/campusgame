@@ -66,7 +66,9 @@ def campus_game():
     pg.display.set_caption(settings.ORIGINAL_CAPTION)
     bg_color = (0, 0, 0)
 
+
     plan = classes.Floorplan(screen)
+    outline = classes.Outline(screen)
     player = classes.Player(screen)
     tile = classes.Fogtile(screen)
     tiles = Group() 
@@ -109,9 +111,12 @@ def campus_game():
         screen.fill(bg_color)
         plan.blitme()
         tiles.draw(screen)
+        outline.blitme()
         player.blitme()
         check_tile_player_collisions(screen, player, tiles)
+        
         player.update()
+
 
         if tb.ada_rect.colliderect(player):
             screen.blit(tb.ada, tb.ada_rect)
@@ -121,7 +126,21 @@ def campus_game():
             screen.blit(tb.rock, tb.rock_rect)
         if tb.lizard_rect.colliderect(player):
             screen.blit(tb.lizard, tb.lizard_rect)
+        if tb.zuse_rect.colliderect(player):
+            screen.blit(tb.zuse, tb.zuse_rect)
+        if tb.roomy_rect.colliderect(player):
+            screen.blit(tb.roomy, tb.roomy_rect)
+        if tb.morty_rect.colliderect(player):
+            screen.blit(tb.morty, tb.morty_rect)
+        if tb.aff_rect.colliderect(player):
+            screen.blit(tb.aff, tb.aff_rect)
+        if tb.otter_rect.colliderect(player):
+            screen.blit(tb.otter, tb.otter_rect)
+         
+      
+                
             
+       
         pg.display.flip()
 
 campus_game()
